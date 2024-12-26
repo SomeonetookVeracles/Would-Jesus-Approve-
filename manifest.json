@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Universal Jesus Popup - Because god has been dead for a long time",
+    "version": "1.3",
+    "description": "Coding a firefox extension almost makes you wish for a nuclear winter",
+    "permissions": [
+      "tabs",
+      "<all_urls>"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      "jesus_approval.jpg",
+      "jesus_disapproval.jpg"
+    ]
+  }
+  
